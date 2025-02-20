@@ -1,7 +1,7 @@
-package com.restaurant.invetory_management.controller;
+package com.restaurant.inventory_management.controller;
 
-import com.restaurant.invetory_management.models.Supplier;
-import com.restaurant.invetory_management.services.SupplierService;
+import com.restaurant.inventory_management.models.Supplier;
+import com.restaurant.inventory_management.services.SupplierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

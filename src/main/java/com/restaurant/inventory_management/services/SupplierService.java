@@ -1,7 +1,7 @@
-package com.restaurant.invetory_management.services;
+package com.restaurant.inventory_management.services;
 
-import com.restaurant.invetory_management.models.Supplier;
-import com.restaurant.invetory_management.repositories.SupplierRepository;
+import com.restaurant.inventory_management.models.Supplier;
+import com.restaurant.inventory_management.repositories.SupplierRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

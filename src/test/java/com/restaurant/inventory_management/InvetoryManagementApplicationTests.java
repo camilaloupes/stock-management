@@ -1,4 +1,4 @@
-package com.restaurant.invetory_management;
+package com.restaurant.inventory_management;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

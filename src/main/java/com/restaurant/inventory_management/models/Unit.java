@@ -1,4 +1,4 @@
-package com.restaurant.invetory_management.models;
+package com.restaurant.inventory_management.models;
 
 public enum Unit {
     UNIT,

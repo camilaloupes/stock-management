@@ -1,6 +1,6 @@
-package com.restaurant.invetory_management.repositories;
+package com.restaurant.inventory_management.repositories;
 
-import com.restaurant.invetory_management.models.Supplier;
+import com.restaurant.inventory_management.models.Supplier;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

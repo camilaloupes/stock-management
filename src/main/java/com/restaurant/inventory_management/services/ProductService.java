@@ -1,7 +1,7 @@
-package com.restaurant.invetory_management.services;
+package com.restaurant.inventory_management.services;
 
-import com.restaurant.invetory_management.models.Product;
-import com.restaurant.invetory_management.repositories.ProductRepository;
+import com.restaurant.inventory_management.models.Product;
+import com.restaurant.inventory_management.repositories.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +25,7 @@ public class ProductService {
     public Product updateProduct(Long id, Product productDetails) {
         Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
         product.setName(productDetails.getName());
-        product.setPrice(productDetails.getPrice());
+        product.setBuyingPrice(productDetails.getBuyingPrice());
         product.setQuantity(productDetails.getQuantity());
         product.setCategory(productDetails.getCategory());
         product.setUnit(productDetails.getUnit());

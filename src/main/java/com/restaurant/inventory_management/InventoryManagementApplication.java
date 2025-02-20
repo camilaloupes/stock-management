@@ -1,13 +1,13 @@
-package com.restaurant.invetory_management;
+package com.restaurant.inventory_management;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class InvetoryManagementApplication {
+public class InventoryManagementApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InvetoryManagementApplication.class, args);
+		SpringApplication.run(InventoryManagementApplication.class, args);
 	}
 
 }
