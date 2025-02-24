@@ -4,6 +4,7 @@ import com.restaurant.inventory_management.models.Category;
 import com.restaurant.inventory_management.models.Unit;
 
 public class ProductRequest {
+
     private String name;
     private int quantity;
     private Unit unit;
@@ -13,6 +14,7 @@ public class ProductRequest {
 
     //Default constructor
     public ProductRequest() {
+        name = "";
     }
 
     public ProductRequest(String name, int quantity, Unit unit, Category category, double buyingPrice, Long supplierId) {

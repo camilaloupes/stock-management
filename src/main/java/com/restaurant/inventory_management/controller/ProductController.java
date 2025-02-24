@@ -33,13 +33,18 @@ public class ProductController {
                 request.getCategory(),
                 request.getUnit()
         );
+        System.out.println("Product created: " + newProduct);
         //Retrieve the supplier by ID
         Supplier supplier = supplierService.getSupplierById(request.getSupplierId()).orElseThrow(() -> new RuntimeException("Supplier not found"));
         // Add the supplier to the product
         newProduct.addSupplier(supplier);
+        System.out.println("Supplier associated: " + supplier);
+
         //Save the product in the database
         Product savedProduct = productService.addProduct(newProduct);
+        System.out.println("Product saved: " + savedProduct);
         return ResponseEntity.ok(savedProduct);
+
     }
 
 
@@ -52,6 +57,7 @@ public class ProductController {
     public ResponseEntity<Product> getProductById(@PathVariable Long id) {
         // Retrieve the product by ID and throws an exception if not found
         Product product = productService.getProductById(id).orElseThrow(() -> new RuntimeException("Product not found"));
+        System.out.println("Product found: " + product);
         return ResponseEntity.ok(product);
     }
 
