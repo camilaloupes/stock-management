@@ -1,0 +1,6 @@
+package com.restaurant.inventory_management.models;
+
+public enum MovementType {
+    ENTRY,
+    EXIT
+}
